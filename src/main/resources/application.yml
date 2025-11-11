@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: clustereddatawarehouse
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/${POSTGRES_DB:fx_deals}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:moha2001}
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8081
