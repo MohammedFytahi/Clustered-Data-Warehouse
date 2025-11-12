@@ -146,22 +146,22 @@ POSTGRES_PASSWORD=yourpassword
 
 ---
 
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── com/progressoft/fxcluster
-│   │   │       ├── controller/      # REST controller
-│   │   │       ├── dto/             # Deal DTOs
-│   │   │       ├── entity/          # JPA entity
-│   │   │       ├── exception/       # Custom exceptions
-│   │   │       ├── mapper/          # DTO <-> Entity
-│   │   │       ├── repository/      # JPA repository
-│   │   │       ├── service/         # Business logic
-│   │   │      
-│   │   └── resources
-│   │       └── application.yml
-│   └── test
-│       └── service/                 # Unit tests
-├── pom.xml
-
+src/
+ ├─ main/
+ │   ├─ java/com/progressoft/clustereddatawarehouse/
+ │   │   ├─ controller/              # REST Controllers (API endpoints)
+ │   │   ├─ service/                 # Business logic interfaces
+ │   │   ├─ service/implementation/  # Service implementations
+ │   │   ├─ repository/              # Spring Data JPA Repositories
+ │   │   ├─ dto/                     # Data Transfer Objects
+ │   │   ├─ model/                   # JPA Entities (domain models)
+ │   │   ├─ exception/               # Custom exceptions & global handlers
+ │   │   └─ mapper/                  # MapStruct mappers (DTO <-> Entity)
+ │   └─ resources/
+ │       ├─ application.yml          # Spring Boot configuration
+ │       └─ data.sql                 # Optional initial data for testing
+ │
+ └─ test/
+     ├─ java/com/progressoft/clustereddatawarehouse/
+     │   ├─ service/implementation
 ---
