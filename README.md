@@ -1,4 +1,4 @@
-# FX Cluster 📈
+# Clustered-Data-Warehouse📈
 
 FX Cluster is a high-performance and scalable FX (Foreign Exchange) deal processing service built using modern Spring Boot practices. It provides robust validation, precise logging, and reliable persistence for financial deal records. Designed for banks, trading systems, and fintech platforms, FX Cluster ensures deal integrity, uniqueness, and extensibility.
 
