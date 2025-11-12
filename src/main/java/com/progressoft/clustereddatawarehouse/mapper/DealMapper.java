@@ -14,6 +14,5 @@ public interface DealMapper {
 
     DealResponseDto toDto(Deal entity);
 
-    List<DealResponseDto> toDtoList(List<Deal> entities);
 
 }
