@@ -102,7 +102,7 @@ Submit a new FX deal.
 ```json
 {
   "id": "FX10003",
-  "fromCurrencyIsoCode": "azd2",
+  "fromCurrencyIsoCode": "USD",
   "toCurrencyIsoCode": "EUR",
   "dealAmount": 1200.50,
   "dealTimestamp": "2025-11-12T12:00:00"
