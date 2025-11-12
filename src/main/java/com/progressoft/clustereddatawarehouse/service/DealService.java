@@ -7,6 +7,5 @@ import java.util.List;
 
 public interface DealService {
     DealResponseDto createDeal(DealRequestDto dealRequest);
-    DealResponseDto getDealById(String dealId);
-    List<DealResponseDto> getAllDeals();
+
 }
